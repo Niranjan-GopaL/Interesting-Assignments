@@ -11,5 +11,5 @@ def sum_n(li):
     return sum
 
 some_sum = lambda given_list : print(f'{sum_p(given_list)} \n{sum_n(given_list)}')
-l1 = list(map(int,input().spit(" ")))
+l1 = list(map(int,input().split(" ")))
 some_sum(l1)
