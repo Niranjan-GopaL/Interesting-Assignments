@@ -33,7 +33,6 @@ struct student *insert_student_byid(struct student *head, struct student *new) {
   struct student *head_pointer = head;
   struct student *prev_pointer = NULL;
 
-  
   while (head_pointer && new->id > head_pointer->id) {
     prev_pointer = head_pointer;
     head_pointer = head_pointer->next;
@@ -54,7 +53,6 @@ struct student *insert_student_byid(struct student *head, struct student *new) {
 struct student *delete_student(struct student *head, int id) {
   struct student *head_pointer = head;
   struct student *prev_pointer = NULL;
-
 
   while (head_pointer && head_pointer->id != id) {
     prev_pointer = head_pointer;
@@ -111,11 +109,6 @@ int main() {
   while (1) {
      // Read the id of the student to be deleted
     scanf("%d", &id);
-
-    if (id <= 0) {
-      // Exit if id is 0 or negative
-      break; 
-    }
     // Delete the student with the given id
     head = delete_student(head, id); 
     // Print the updated linked list
