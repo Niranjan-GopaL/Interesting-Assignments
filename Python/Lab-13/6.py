@@ -6,6 +6,7 @@ Techniques used:
 
 while True:
     try:
+        # Evalutes the user inout and converts into a list
         num_list = eval(input())
         # If the input is "" that is False 
         if not num_list:
@@ -25,6 +26,9 @@ while True:
         print("Invalid input:", value_error)
     except Exception as e:
         print("An error occurred:", e)
+
+
+
 
 '''
 Sample input:
